@@ -1,10 +1,10 @@
 """
-Grupo de Sistemas en Tiempo Real
-
-Autor: Ing. Gonzalez Lucas Ezequiel
-
-Script para realizar Transfer Learning sobre una arquitectura
-pre-entrenada ResNet50
+##########################################
+  Autor : Ing.Gonzalez Lucas Ezequiel
+  Fecha : 10/12/2019
+  Universidad Nacional de Rio Cuarto
+  Grupo de sistemas en tiempo real (GSTR)
+##########################################
 """
 import numpy as np
 import os

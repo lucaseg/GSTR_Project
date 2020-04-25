@@ -1,0 +1,40 @@
+    1  clear
+    2  ls
+    3  source env/bin/activate
+    4  clear
+    5  ls
+    6  chmod 777 cam.py 
+    7  pip install pycamera
+    8  pip install picamera
+    9  python
+   10  clear
+   11  ls /dev/video*
+   12  clear
+   13  python
+   14  sudo raspi-config
+   15  get https://files.resin.io/resinos/raspberrypi4-64/2.41.0%2Brev4.dev/image/balena.img.zip
+   16  wget https://files.resin.io/resinos/raspberrypi4-64/2.41.0%2Brev4.dev/image/balena.img.zip
+   17  sudo apt-get install raspi-config rpi-update
+   18  clear
+   19  apt update
+   20  apt upgrade
+   21  clear
+   22  sudo apt-get install raspi-config rpi-update
+   23  sudo raspi-config
+   24  sudo bash -c "echo 'gpu_mem=128' >> /boot/config.txt"
+   25  curl -L --output /usr/bin/rpi-update https://raw.githubusercontent.com/Hexxeh/rpi-update/master/rpi-update && chmod +x /usr/bin/rpi-update
+   26  sudo rpi-update
+   27  git clone https://github.com/raspberrypi/userland.git
+   28  cd userland
+   29  ./buildme
+   30  touch ~/.bash_aliases
+   31  echo -e 'PATH=$PATH:/opt/vc/bin\nexport PATH' >> ~/.bash_aliases
+   32  echo -e 'LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/vc/lib\nexport LD_LIBRARY_PATH' >> ~/.bash_aliases
+   33  source ~/.bashrc
+   34  ldconfig
+   35  echo 'SUBSYSTEM==\"vchiq\",GROUP=\"video\",MODE=\"0660\"' > /etc/udev/rules.d/10-vchiq-permissions.rules
+   36  usermod -a -G video ubuntu
+   37  sudo reboot now
+   38  source env/bin/activate
+   39  python
+   40  history >> history

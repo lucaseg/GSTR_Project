@@ -1,3 +1,12 @@
+"""
+##########################################
+  Autor : Ing.Gonzalez Lucas Ezequiel
+  Fecha : 10/12/2019
+  Universidad Nacional de Rio Cuarto
+  Grupo de sistemas en tiempo real (GSTR)
+##########################################
+"""
+
 import numpy as np
 import os
 import matplotlib.pyplot as plt
